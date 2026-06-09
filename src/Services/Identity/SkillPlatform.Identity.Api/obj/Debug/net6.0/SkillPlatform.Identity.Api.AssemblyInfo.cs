@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SkillPlatform.Identity.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+05040ab36c0c7e3aaf7dceec7643fc5cbfec8a30")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+43155c41348dcff93360925642e959e411f09dc8")]
 [assembly: System.Reflection.AssemblyProductAttribute("SkillPlatform.Identity.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SkillPlatform.Identity.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
