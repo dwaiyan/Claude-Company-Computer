@@ -120,3 +120,15 @@ E:\Claude Company Computer\src\Services\Identity\SkillPlatform.Identity.Tests\ob
 E:\Claude Company Computer\src\Services\Identity\SkillPlatform.Identity.Tests\obj\Debug\net6.0\SkillPlatform.Identity.Tests.pdb
 E:\Claude Company Computer\src\Services\Identity\SkillPlatform.Identity.Tests\obj\Debug\net6.0\SkillPlatform.Identity.Tests.genruntimeconfig.cache
 E:\Claude Company Computer\src\Services\Identity\SkillPlatform.Identity.Tests\obj\Debug\net6.0\ref\SkillPlatform.Identity.Tests.dll
+E:\Claude Company Computer\src\Services\Identity\SkillPlatform.Identity.Tests\bin\Debug\net6.0\BCrypt-Net-Next.dll
+E:\Claude Company Computer\src\Services\Identity\SkillPlatform.Identity.Tests\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+E:\Claude Company Computer\src\Services\Identity\SkillPlatform.Identity.Tests\bin\Debug\net6.0\Microsoft.Bcl.Cryptography.dll
+E:\Claude Company Computer\src\Services\Identity\SkillPlatform.Identity.Tests\bin\Debug\net6.0\Microsoft.Bcl.TimeProvider.dll
+E:\Claude Company Computer\src\Services\Identity\SkillPlatform.Identity.Tests\bin\Debug\net6.0\Microsoft.Extensions.Configuration.dll
+E:\Claude Company Computer\src\Services\Identity\SkillPlatform.Identity.Tests\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+E:\Claude Company Computer\src\Services\Identity\SkillPlatform.Identity.Tests\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\Claude Company Computer\src\Services\Identity\SkillPlatform.Identity.Tests\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+E:\Claude Company Computer\src\Services\Identity\SkillPlatform.Identity.Tests\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+E:\Claude Company Computer\src\Services\Identity\SkillPlatform.Identity.Tests\bin\Debug\net6.0\System.Formats.Asn1.dll
+E:\Claude Company Computer\src\Services\Identity\SkillPlatform.Identity.Tests\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+E:\Claude Company Computer\src\Services\Identity\SkillPlatform.Identity.Tests\bin\Debug\net6.0\System.Runtime.CompilerServices.Unsafe.dll
