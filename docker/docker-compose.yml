@@ -1,0 +1,34 @@
+version: '3.9'
+
+services:
+  postgres:
+    image: postgres:15-alpine
+    environment:
+      POSTGRES_USER: skilldev
+      POSTGRES_PASSWORD: SkillDev@2026
+      POSTGRES_DB: identity
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+  gateway:
+    build:
+      context: ../src/Gateway/SkillPlatform.Gateway
+      dockerfile: Dockerfile
+    ports:
+      - "8080:80"
+    depends_on:
+      - identity-api
+
+  identity-api:
+    build:
+      context: ../src/Services/Identity/SkillPlatform.Identity.Api
+      dockerfile: Dockerfile
+    environment:
+      ConnectionStrings__DefaultConnection: "Host=postgres;Database=identity;Username=skilldev;Password=SkillDev@2026"
+    depends_on:
+      - postgres
+
+volumes:
+  pgdata:

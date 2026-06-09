@@ -1,0 +1,12 @@
+E:\Claude Company Computer\src\Shared\SkillPlatform.Common\bin\Debug\net6.0\SkillPlatform.Common.deps.json
+E:\Claude Company Computer\src\Shared\SkillPlatform.Common\bin\Debug\net6.0\SkillPlatform.Common.dll
+E:\Claude Company Computer\src\Shared\SkillPlatform.Common\bin\Debug\net6.0\SkillPlatform.Common.pdb
+E:\Claude Company Computer\src\Shared\SkillPlatform.Common\obj\Debug\net6.0\SkillPlatform.Common.csproj.AssemblyReference.cache
+E:\Claude Company Computer\src\Shared\SkillPlatform.Common\obj\Debug\net6.0\SkillPlatform.Common.GeneratedMSBuildEditorConfig.editorconfig
+E:\Claude Company Computer\src\Shared\SkillPlatform.Common\obj\Debug\net6.0\SkillPlatform.Common.AssemblyInfoInputs.cache
+E:\Claude Company Computer\src\Shared\SkillPlatform.Common\obj\Debug\net6.0\SkillPlatform.Common.AssemblyInfo.cs
+E:\Claude Company Computer\src\Shared\SkillPlatform.Common\obj\Debug\net6.0\SkillPlatform.Common.csproj.CoreCompileInputs.cache
+E:\Claude Company Computer\src\Shared\SkillPlatform.Common\obj\Debug\net6.0\SkillPlatform.Common.dll
+E:\Claude Company Computer\src\Shared\SkillPlatform.Common\obj\Debug\net6.0\refint\SkillPlatform.Common.dll
+E:\Claude Company Computer\src\Shared\SkillPlatform.Common\obj\Debug\net6.0\SkillPlatform.Common.pdb
+E:\Claude Company Computer\src\Shared\SkillPlatform.Common\obj\Debug\net6.0\ref\SkillPlatform.Common.dll

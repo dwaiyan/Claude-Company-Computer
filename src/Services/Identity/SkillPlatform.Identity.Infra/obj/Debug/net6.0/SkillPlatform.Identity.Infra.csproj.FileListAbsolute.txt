@@ -1,0 +1,15 @@
+E:\Claude Company Computer\src\Services\Identity\SkillPlatform.Identity.Infra\bin\Debug\net6.0\SkillPlatform.Identity.Infra.deps.json
+E:\Claude Company Computer\src\Services\Identity\SkillPlatform.Identity.Infra\bin\Debug\net6.0\SkillPlatform.Identity.Infra.dll
+E:\Claude Company Computer\src\Services\Identity\SkillPlatform.Identity.Infra\bin\Debug\net6.0\SkillPlatform.Identity.Infra.pdb
+E:\Claude Company Computer\src\Services\Identity\SkillPlatform.Identity.Infra\bin\Debug\net6.0\SkillPlatform.Identity.Core.dll
+E:\Claude Company Computer\src\Services\Identity\SkillPlatform.Identity.Infra\bin\Debug\net6.0\SkillPlatform.Identity.Core.pdb
+E:\Claude Company Computer\src\Services\Identity\SkillPlatform.Identity.Infra\obj\Debug\net6.0\SkillPlatform.Identity.Infra.csproj.AssemblyReference.cache
+E:\Claude Company Computer\src\Services\Identity\SkillPlatform.Identity.Infra\obj\Debug\net6.0\SkillPlatform.Identity.Infra.GeneratedMSBuildEditorConfig.editorconfig
+E:\Claude Company Computer\src\Services\Identity\SkillPlatform.Identity.Infra\obj\Debug\net6.0\SkillPlatform.Identity.Infra.AssemblyInfoInputs.cache
+E:\Claude Company Computer\src\Services\Identity\SkillPlatform.Identity.Infra\obj\Debug\net6.0\SkillPlatform.Identity.Infra.AssemblyInfo.cs
+E:\Claude Company Computer\src\Services\Identity\SkillPlatform.Identity.Infra\obj\Debug\net6.0\SkillPlatform.Identity.Infra.csproj.CoreCompileInputs.cache
+E:\Claude Company Computer\src\Services\Identity\SkillPlatform.Identity.Infra\obj\Debug\net6.0\SkillPla.8F52B4F2.Up2Date
+E:\Claude Company Computer\src\Services\Identity\SkillPlatform.Identity.Infra\obj\Debug\net6.0\SkillPlatform.Identity.Infra.dll
+E:\Claude Company Computer\src\Services\Identity\SkillPlatform.Identity.Infra\obj\Debug\net6.0\refint\SkillPlatform.Identity.Infra.dll
+E:\Claude Company Computer\src\Services\Identity\SkillPlatform.Identity.Infra\obj\Debug\net6.0\SkillPlatform.Identity.Infra.pdb
+E:\Claude Company Computer\src\Services\Identity\SkillPlatform.Identity.Infra\obj\Debug\net6.0\ref\SkillPlatform.Identity.Infra.dll

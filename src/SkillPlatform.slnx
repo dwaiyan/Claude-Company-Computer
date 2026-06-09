@@ -1,0 +1,15 @@
+<Solution>
+  <Folder Name="/Gateway/">
+    <Project Path="Gateway/SkillPlatform.Gateway/SkillPlatform.Gateway.csproj" />
+  </Folder>
+  <Folder Name="/Services/" />
+  <Folder Name="/Services/Identity/">
+    <Project Path="Services/Identity/SkillPlatform.Identity.Api/SkillPlatform.Identity.Api.csproj" />
+    <Project Path="Services/Identity/SkillPlatform.Identity.Core/SkillPlatform.Identity.Core.csproj" />
+    <Project Path="Services/Identity/SkillPlatform.Identity.Infra/SkillPlatform.Identity.Infra.csproj" />
+    <Project Path="Services/Identity/SkillPlatform.Identity.Tests/SkillPlatform.Identity.Tests.csproj" />
+  </Folder>
+  <Folder Name="/Shared/">
+    <Project Path="Shared/SkillPlatform.Common/SkillPlatform.Common.csproj" />
+  </Folder>
+</Solution>
