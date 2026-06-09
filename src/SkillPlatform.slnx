@@ -3,6 +3,11 @@
     <Project Path="Gateway/SkillPlatform.Gateway/SkillPlatform.Gateway.csproj" />
   </Folder>
   <Folder Name="/Services/" />
+  <Folder Name="/Services/Collaboration/">
+    <Project Path="Services/Collaboration/SkillPlatform.Collaboration.Api/SkillPlatform.Collaboration.Api.csproj" />
+    <Project Path="Services/Collaboration/SkillPlatform.Collaboration.Core/SkillPlatform.Collaboration.Core.csproj" />
+    <Project Path="Services/Collaboration/SkillPlatform.Collaboration.Infra/SkillPlatform.Collaboration.Infra.csproj" />
+  </Folder>
   <Folder Name="/Services/Content/">
     <Project Path="Services/Content/SkillPlatform.Content.Api/SkillPlatform.Content.Api.csproj" />
     <Project Path="Services/Content/SkillPlatform.Content.Core/SkillPlatform.Content.Core.csproj" />
@@ -18,6 +23,9 @@
     <Project Path="Services/Learning/SkillPlatform.Learning.Api/SkillPlatform.Learning.Api.csproj" />
     <Project Path="Services/Learning/SkillPlatform.Learning.Core/SkillPlatform.Learning.Core.csproj" />
     <Project Path="Services/Learning/SkillPlatform.Learning.Infra/SkillPlatform.Learning.Infra.csproj" />
+  </Folder>
+  <Folder Name="/Services/Notification/">
+    <Project Path="Services/Notification/SkillPlatform.Notification.Api/SkillPlatform.Notification.Api.csproj" />
   </Folder>
   <Folder Name="/Shared/">
     <Project Path="Shared/SkillPlatform.Common/SkillPlatform.Common.csproj" />

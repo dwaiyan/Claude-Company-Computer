@@ -12,7 +12,9 @@
       "Bash(dotnet add *)",
       "Bash(dotnet dotnet-ef *)",
       "Bash(mkdir -p \"E:\\\\Claude Company Computer\\\\src\\\\Services\\\\Learning\\\\SkillPlatform.Learning.Core\\\\{Entities,Interfaces,DTOs}\")",
-      "Bash(mkdir -p \"E:\\\\Claude Company Computer\\\\src\\\\Services\\\\Learning\\\\SkillPlatform.Learning.Infra\\\\{Data,Repositories}\")"
+      "Bash(mkdir -p \"E:\\\\Claude Company Computer\\\\src\\\\Services\\\\Learning\\\\SkillPlatform.Learning.Infra\\\\{Data,Repositories}\")",
+      "Bash(mkdir -p \"E:\\\\Claude Company Computer\\\\src\\\\Services\\\\Collaboration\\\\SkillPlatform.Collaboration.Core\\\\{Entities,Interfaces,DTOs}\")",
+      "Bash(mkdir -p \"E:\\\\Claude Company Computer\\\\src\\\\Services\\\\Collaboration\\\\SkillPlatform.Collaboration.Infra\\\\{Data,Repositories}\")"
     ]
   }
 }

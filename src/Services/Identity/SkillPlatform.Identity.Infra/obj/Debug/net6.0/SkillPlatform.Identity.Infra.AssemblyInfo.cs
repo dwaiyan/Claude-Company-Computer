@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SkillPlatform.Identity.Infra")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2531184b2811decf53233ce401aa5d98af3a8561")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ef182e535a00969b4d30bdd6d38cb1729523d63d")]
 [assembly: System.Reflection.AssemblyProductAttribute("SkillPlatform.Identity.Infra")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SkillPlatform.Identity.Infra")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
