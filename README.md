@@ -1,2 +1,2 @@
-# Claude-Kayang-Computer
-Claude Kayang Computer
+# Claude-Company-Computer
+Claude Company Computer
