@@ -9,3 +9,4 @@ E:\Claude Company Computer\src\Services\Identity\SkillPlatform.Identity.Core\obj
 E:\Claude Company Computer\src\Services\Identity\SkillPlatform.Identity.Core\obj\Debug\net6.0\refint\SkillPlatform.Identity.Core.dll
 E:\Claude Company Computer\src\Services\Identity\SkillPlatform.Identity.Core\obj\Debug\net6.0\SkillPlatform.Identity.Core.pdb
 E:\Claude Company Computer\src\Services\Identity\SkillPlatform.Identity.Core\obj\Debug\net6.0\ref\SkillPlatform.Identity.Core.dll
+E:\Claude Company Computer\src\Services\Identity\SkillPlatform.Identity.Core\obj\Debug\net6.0\SkillPlatform.Identity.Core.csproj.AssemblyReference.cache
