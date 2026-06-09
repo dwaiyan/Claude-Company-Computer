@@ -3,6 +3,9 @@
     <Project Path="Gateway/SkillPlatform.Gateway/SkillPlatform.Gateway.csproj" />
   </Folder>
   <Folder Name="/Services/" />
+  <Folder Name="/Services/CodeRunner/">
+    <Project Path="Services/CodeRunner/SkillPlatform.CodeRunner.Api/SkillPlatform.CodeRunner.Api.csproj" />
+  </Folder>
   <Folder Name="/Services/Collaboration/">
     <Project Path="Services/Collaboration/SkillPlatform.Collaboration.Api/SkillPlatform.Collaboration.Api.csproj" />
     <Project Path="Services/Collaboration/SkillPlatform.Collaboration.Core/SkillPlatform.Collaboration.Core.csproj" />

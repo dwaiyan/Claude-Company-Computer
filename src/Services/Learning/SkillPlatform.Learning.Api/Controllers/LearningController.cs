@@ -1,4 +1,5 @@
 using System.Security.Claims;
+using System.Text.Json;
 using Microsoft.AspNetCore.Mvc;
 using SkillPlatform.Learning.Core.DTOs;
 using SkillPlatform.Learning.Core.Entities;
@@ -118,19 +119,43 @@ public class LearningController : ControllerBase
         var assessment = await _repo.GetAssessmentByIdAsync(id);
         if (assessment == null) return NotFound();
 
+        // Auto-score for choice questions
+        int score = 0, total = 0;
+        if (assessment.Type == "choice")
+        {
+            var questions = System.Text.Json.JsonSerializer.Deserialize<List<JsonElement>>(assessment.QuestionsJson);
+            var answers = System.Text.Json.JsonSerializer.Deserialize<List<JsonElement>>(System.Text.Json.JsonSerializer.Serialize(request.Answers));
+            if (questions != null && answers != null)
+            {
+                total = questions.Count;
+                for (int i = 0; i < Math.Min(questions.Count, answers.Count); i++)
+                {
+                    var correct = questions[i].GetProperty("correctIndex").GetInt32();
+                    var given = answers[i].ValueKind == JsonValueKind.Number
+                        ? answers[i].GetInt32()
+                        : (answers[i].TryGetProperty("selectedIndex", out var si) ? si.GetInt32() : -1);
+                    if (correct == given) score++;
+                }
+                score = total > 0 ? score * 100 / total : 0;
+            }
+        }
+        bool passed = score >= assessment.PassScore;
+
         var record = await _repo.SubmitRecordAsync(new AssessmentRecord
         {
             Id = Guid.NewGuid(),
             UserId = GetUserId(),
             AssessmentId = id,
             AnswersJson = System.Text.Json.JsonSerializer.Serialize(request.Answers),
+            Score = score,
+            Passed = passed,
             StartedAt = request.StartedAt
         });
         return Ok(new AssessmentRecordDto
         {
             Id = record.Id, AssessmentId = record.AssessmentId,
-            AssessmentTitle = assessment.Title, Score = record.Score,
-            Passed = record.Passed, FinishedAt = record.FinishedAt
+            AssessmentTitle = assessment.Title, Score = score,
+            Passed = passed, FinishedAt = record.FinishedAt
         });
     }
 

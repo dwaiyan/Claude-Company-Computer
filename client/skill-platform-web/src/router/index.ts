@@ -52,6 +52,18 @@ const router = createRouter({
       component: () => import('@/views/NoteDetailView.vue'),
       meta: { requiresAuth: true },
     },
+    {
+      path: '/code',
+      name: 'code-editor',
+      component: () => import('@/views/CodeEditorView.vue'),
+      meta: { requiresAuth: true },
+    },
+    {
+      path: '/admin',
+      name: 'admin',
+      component: () => import('@/views/AdminView.vue'),
+      meta: { requiresAuth: true },
+    },
   ],
 });
 

@@ -18,6 +18,8 @@ function handleLogout() {
       <nav class="nav-links">
         <router-link to="/tech-tree">技术图谱</router-link>
         <router-link to="/learning">我的学习</router-link>
+        <router-link to="/code">在线代码</router-link>
+        <router-link v-if="auth.isAdmin" to="/admin">管理</router-link>
       </nav>
       <div class="user-info">
         <span v-if="auth.user">你好，{{ auth.user.username }}</span>
@@ -41,6 +43,11 @@ function handleLogout() {
           <span class="action-icon">📊</span>
           <h3>我的学习</h3>
           <p>打卡 · 技能雷达 · 评测</p>
+        </router-link>
+        <router-link to="/code" class="action-card">
+          <span class="action-icon">💻</span>
+          <h3>C# 在线运行</h3>
+          <p>编写 .NET 代码，在线编译</p>
         </router-link>
       </div>
 
