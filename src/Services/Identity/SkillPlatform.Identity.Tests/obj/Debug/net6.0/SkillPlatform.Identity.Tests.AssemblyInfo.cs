@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SkillPlatform.Identity.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ba597bc16c54708afe62b5221b767e1bb6de1632")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2531184b2811decf53233ce401aa5d98af3a8561")]
 [assembly: System.Reflection.AssemblyProductAttribute("SkillPlatform.Identity.Tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SkillPlatform.Identity.Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

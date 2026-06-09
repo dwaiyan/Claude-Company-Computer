@@ -15,6 +15,10 @@ function handleLogout() {
   <div class="dashboard">
     <header class="app-header">
       <h1>技术能力提升平台</h1>
+      <nav class="nav-links">
+        <router-link to="/tech-tree">技术图谱</router-link>
+        <router-link to="/learning">我的学习</router-link>
+      </nav>
       <div class="user-info">
         <span v-if="auth.user">你好，{{ auth.user.username }}</span>
         <button @click="handleLogout" class="btn-link">退出</button>
@@ -24,7 +28,20 @@ function handleLogout() {
     <main class="dashboard-main">
       <div class="welcome-card">
         <h2>技术能力提升平台</h2>
-        <p>功能模块将在 P2~P4 阶段逐步建设。当前 P1 骨架已就绪。</p>
+        <p>.NET 微服务 · IoT · APS · 数字孪生 — 系统化提升技术能力</p>
+      </div>
+
+      <div class="quick-actions">
+        <router-link to="/tech-tree" class="action-card">
+          <span class="action-icon">📚</span>
+          <h3>技术图谱</h3>
+          <p>浏览 .NET 生态技术栈</p>
+        </router-link>
+        <router-link to="/learning" class="action-card">
+          <span class="action-icon">📊</span>
+          <h3>我的学习</h3>
+          <p>打卡 · 技能雷达 · 评测</p>
+        </router-link>
       </div>
 
       <div class="tech-stack-grid">
@@ -34,11 +51,11 @@ function handleLogout() {
         </div>
         <div class="tech-card">
           <h3>数据存储</h3>
-          <p>PostgreSQL, Redis, RabbitMQ</p>
+          <p>PostgreSQL, MySQL, Redis</p>
         </div>
         <div class="tech-card">
-          <h3>前端框架</h3>
-          <p>Vue 3 + Pinia + Vite</p>
+          <h3>消息队列</h3>
+          <p>RabbitMQ, MQTT</p>
         </div>
         <div class="tech-card">
           <h3>业务领域</h3>

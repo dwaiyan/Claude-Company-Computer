@@ -33,7 +33,6 @@ E:\Claude Company Computer\src\Services\Identity\SkillPlatform.Identity.Api\obj\
 E:\Claude Company Computer\src\Services\Identity\SkillPlatform.Identity.Api\obj\Debug\net6.0\staticwebassets.build.json.cache
 E:\Claude Company Computer\src\Services\Identity\SkillPlatform.Identity.Api\obj\Debug\net6.0\staticwebassets.development.json
 E:\Claude Company Computer\src\Services\Identity\SkillPlatform.Identity.Api\obj\Debug\net6.0\staticwebassets.build.endpoints.json
-E:\Claude Company Computer\src\Services\Identity\SkillPlatform.Identity.Api\obj\Debug\net6.0\swae.build.ex.cache
 E:\Claude Company Computer\src\Services\Identity\SkillPlatform.Identity.Api\obj\Debug\net6.0\SkillPla.475E2EF0.Up2Date
 E:\Claude Company Computer\src\Services\Identity\SkillPlatform.Identity.Api\obj\Debug\net6.0\SkillPlatform.Identity.Api.dll
 E:\Claude Company Computer\src\Services\Identity\SkillPlatform.Identity.Api\obj\Debug\net6.0\refint\SkillPlatform.Identity.Api.dll
@@ -71,3 +70,4 @@ E:\Claude Company Computer\src\Services\Identity\SkillPlatform.Identity.Api\bin\
 E:\Claude Company Computer\src\Services\Identity\SkillPlatform.Identity.Api\bin\Debug\net6.0\System.Runtime.CompilerServices.Unsafe.dll
 E:\Claude Company Computer\src\Services\Identity\SkillPlatform.Identity.Api\bin\Debug\net6.0\SkillPlatform.Common.dll
 E:\Claude Company Computer\src\Services\Identity\SkillPlatform.Identity.Api\bin\Debug\net6.0\SkillPlatform.Common.pdb
+E:\Claude Company Computer\src\Services\Identity\SkillPlatform.Identity.Api\obj\Debug\net6.0\swae.build.ex.cache

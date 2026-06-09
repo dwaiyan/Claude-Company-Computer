@@ -136,6 +136,25 @@ body {
   color: #1a73e8;
 }
 
+.nav-links {
+  display: flex;
+  gap: 24px;
+}
+
+.nav-links a {
+  color: #444;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 4px 0;
+  border-bottom: 2px solid transparent;
+}
+
+.nav-links a:hover, .nav-links a.router-link-active {
+  color: #1a73e8;
+  border-bottom-color: #1a73e8;
+}
+
 .user-info {
   display: flex;
   align-items: center;
@@ -179,6 +198,44 @@ body {
 .welcome-card p {
   font-size: 14px;
   opacity: 0.85;
+}
+
+.quick-actions {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.action-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 28px;
+  text-decoration: none;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.06);
+  transition: all 0.2s;
+}
+
+.action-card:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+  transform: translateY(-2px);
+}
+
+.action-icon {
+  font-size: 28px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.action-card h3 {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 4px;
+}
+
+.action-card p {
+  font-size: 13px;
+  color: #888;
 }
 
 .tech-stack-grid {

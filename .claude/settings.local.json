@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(rm -f \"E:\\\\Claude Company Computer\\\\client\\\\skill-platform-web\\\\src\\\\components\\\\HelloWorld.vue\")",
+      "Bash(npm run *)",
+      "Bash(docker compose *)",
+      "Bash(dotnet build *)",
+      "Bash(dotnet test *)",
+      "Bash(mkdir -p \"E:\\\\Claude Company Computer\\\\src\\\\Services\\\\Content\\\\SkillPlatform.Content.Core\\\\{Entities,Interfaces,DTOs}\")",
+      "Bash(mkdir -p \"E:\\\\Claude Company Computer\\\\src\\\\Services\\\\Content\\\\SkillPlatform.Content.Infra\\\\{Data,Repositories}\")",
+      "Bash(dotnet sln *)",
+      "Bash(dotnet add *)",
+      "Bash(dotnet dotnet-ef *)",
+      "Bash(mkdir -p \"E:\\\\Claude Company Computer\\\\src\\\\Services\\\\Learning\\\\SkillPlatform.Learning.Core\\\\{Entities,Interfaces,DTOs}\")",
+      "Bash(mkdir -p \"E:\\\\Claude Company Computer\\\\src\\\\Services\\\\Learning\\\\SkillPlatform.Learning.Infra\\\\{Data,Repositories}\")"
+    ]
+  }
+}

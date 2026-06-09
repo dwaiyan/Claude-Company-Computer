@@ -22,6 +22,24 @@ const router = createRouter({
       component: () => import('@/views/RegisterView.vue'),
       meta: { guest: true },
     },
+    {
+      path: '/tech-tree',
+      name: 'tech-tree',
+      component: () => import('@/views/TechTreeView.vue'),
+      meta: { requiresAuth: true },
+    },
+    {
+      path: '/tech-tree/:nodeId',
+      name: 'node-detail',
+      component: () => import('@/views/NodeDetailView.vue'),
+      meta: { requiresAuth: true },
+    },
+    {
+      path: '/learning',
+      name: 'learning',
+      component: () => import('@/views/LearningView.vue'),
+      meta: { requiresAuth: true },
+    },
   ],
 });
 

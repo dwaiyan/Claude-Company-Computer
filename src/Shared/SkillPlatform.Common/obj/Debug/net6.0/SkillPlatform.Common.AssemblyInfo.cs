@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SkillPlatform.Common")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1897d3efc4efd719fdbf96b6997ec4444d702759")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2531184b2811decf53233ce401aa5d98af3a8561")]
 [assembly: System.Reflection.AssemblyProductAttribute("SkillPlatform.Common")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SkillPlatform.Common")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
