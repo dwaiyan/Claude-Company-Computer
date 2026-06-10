@@ -11,12 +11,12 @@ function goToNode(nodeId: string) { router.push(`/tech-tree/${nodeId}`); }
 <template>
   <div class="dashboard">
     <header class="app-header">
-      <div class="header-left"><h1>技术图谱</h1><nav class="nav-links"><router-link to="/">←</router-link></nav></div>
+      <div class="header-left"><h1>技術図譜</h1><nav class="nav-links"><router-link to="/">← 戻る</router-link></nav></div>
       <div class="header-right"><ThemeToggle /></div>
     </header>
     <div class="page-container">
-      <div class="page-header"><p>.NET 生态技术栈全景</p></div>
-      <div v-if="loading" class="loading">加载中...</div>
+      <div class="page-header"><p>.NET エコシステム技術スタック全景</p></div>
+      <div v-if="loading" class="loading">読込中...</div>
       <div v-else class="tree-grid">
         <div v-for="tree in trees" :key="tree.id" class="tree-card" @click="goToNode(tree.id)">
           <div class="tree-icon">{{ tree.icon || '▣' }}</div>
@@ -29,11 +29,11 @@ function goToNode(nodeId: string) { router.push(`/tech-tree/${nodeId}`); }
 </template>
 
 <style scoped>
-.tree-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
-.tree-card { background: var(--bg-surface); border: 1px solid var(--border-default); border-radius: var(--radius-lg); padding: 32px; cursor: pointer; transition: all var(--transition-base); }
-.tree-card:hover { border-color: var(--color-primary); box-shadow: var(--shadow-glow); transform: translateY(-4px); }
-.tree-icon { font-size: 36px; margin-bottom: 14px; transition: transform var(--transition-base); }
-.tree-card:hover .tree-icon { transform: scale(1.1) rotate(-5deg); }
-.tree-card h2 { font-size: 17px; font-weight: 400; color: var(--text-primary); margin-bottom: 6px; }
-.tree-card p { font-size: 13px; color: var(--text-muted); }
+.tree-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1px; background: var(--border-subtle); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); overflow: hidden; }
+.tree-card { background: var(--bg-surface); padding: 40px 32px; cursor: pointer; transition: background var(--transition-fast); }
+.tree-card:hover { background: var(--bg-muted); }
+.tree-icon { font-size: 32px; margin-bottom: 16px; transition: color var(--transition-fast); display: flex; align-items: center; height: 44px; }
+.tree-card:hover .tree-icon { color: var(--color-accent); }
+.tree-card h2 { font-size: 18px; font-weight: 400; color: var(--text-primary); margin-bottom: 6px; letter-spacing: 0.02em; }
+.tree-card p { font-size: 13px; font-weight: 300; color: var(--text-muted); }
 </style>

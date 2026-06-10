@@ -14,7 +14,17 @@
       "Bash(mkdir -p \"E:\\\\Claude Company Computer\\\\src\\\\Services\\\\Learning\\\\SkillPlatform.Learning.Core\\\\{Entities,Interfaces,DTOs}\")",
       "Bash(mkdir -p \"E:\\\\Claude Company Computer\\\\src\\\\Services\\\\Learning\\\\SkillPlatform.Learning.Infra\\\\{Data,Repositories}\")",
       "Bash(mkdir -p \"E:\\\\Claude Company Computer\\\\src\\\\Services\\\\Collaboration\\\\SkillPlatform.Collaboration.Core\\\\{Entities,Interfaces,DTOs}\")",
-      "Bash(mkdir -p \"E:\\\\Claude Company Computer\\\\src\\\\Services\\\\Collaboration\\\\SkillPlatform.Collaboration.Infra\\\\{Data,Repositories}\")"
+      "Bash(mkdir -p \"E:\\\\Claude Company Computer\\\\src\\\\Services\\\\Collaboration\\\\SkillPlatform.Collaboration.Infra\\\\{Data,Repositories}\")",
+      "mcp__plugin_playwright_playwright__browser_navigate",
+      "mcp__plugin_playwright_playwright__browser_take_screenshot",
+      "mcp__plugin_playwright_playwright__browser_click",
+      "mcp__plugin_playwright_playwright__browser_snapshot",
+      "mcp__plugin_playwright_playwright__browser_wait_for",
+      "mcp__plugin_playwright_playwright__browser_hover",
+      "Bash(npm install *)",
+      "mcp__plugin_playwright_playwright__browser_evaluate",
+      "Bash(npx vue-tsc *)",
+      "Bash(npx vite *)"
     ]
   }
 }

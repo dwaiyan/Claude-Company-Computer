@@ -1,10 +1,25 @@
 <!doctype html>
-<html lang="en">
+<html lang="zh-CN">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>skill-platform-web</title>
+    <title>技術能力提升平台</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=Noto+Serif+SC:wght@300;400;700&display=swap" rel="stylesheet" />
+    <!-- Mock mode flag: MUST be set before any ES module loads -->
+    <script>
+      window.__MOCK_MODE__ = true;
+      if (!localStorage.getItem('accessToken')) {
+        localStorage.setItem('accessToken', 'mock-access-token');
+        localStorage.setItem('refreshToken', 'mock-refresh-token');
+        localStorage.setItem('user', JSON.stringify({
+          id: 'u-001', username: 'zhangdw', email: 'zhangdw@company.com',
+          avatar: null, title: '高级工程师', department: '智慧实验室', roles: ['admin', 'user'],
+        }));
+      }
+    </script>
   </head>
   <body>
     <div id="app"></div>

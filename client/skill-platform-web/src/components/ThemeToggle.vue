@@ -6,49 +6,40 @@ const { theme, toggle } = useTheme();
 
 <template>
   <button
-    class="theme-toggle"
-    :title="theme === 'dark' ? '切换浅色模式' : '切换深色模式'"
+    class="zen-toggle"
+    :title="theme === 'dark' ? '墨 → 紙' : '紙 → 墨'"
     @click="toggle"
     :aria-label="theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'"
   >
-    <span class="toggle-track">
-      <span class="toggle-icon">{{ theme === 'dark' ? '◉' : '○' }}</span>
-    </span>
+    <span class="zen-toggle-icon">{{ theme === 'dark' ? '墨' : '紙' }}</span>
   </button>
 </template>
 
 <style scoped>
-.theme-toggle {
+.zen-toggle {
   background: none;
   border: none;
   cursor: pointer;
   padding: 4px;
-  border-radius: var(--radius-md);
+  border-radius: var(--radius-sm);
   transition: background var(--transition-fast);
+  font-family: var(--font-display);
 }
-.theme-toggle:hover { background: var(--bg-muted); }
+.zen-toggle:hover { background: var(--bg-muted); }
 
-.toggle-track {
+.zen-toggle-icon {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 32px;
   height: 32px;
-  border-radius: 50%;
-  border: 1px solid var(--border-default);
-  font-size: 14px;
-  transition: all var(--transition-base);
+  font-size: 15px;
   color: var(--text-secondary);
-}
-
-.toggle-icon {
-  transition: transform var(--transition-base);
+  transition: color var(--transition-base);
   line-height: 1;
 }
 
-.theme-toggle:hover .toggle-track {
-  border-color: var(--color-primary);
-  color: var(--color-primary);
-  box-shadow: 0 0 8px var(--color-primary-glow);
+.zen-toggle:hover .zen-toggle-icon {
+  color: var(--color-accent);
 }
 </style>

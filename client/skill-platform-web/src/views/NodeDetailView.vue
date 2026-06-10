@@ -19,42 +19,42 @@ onMounted(async () => {
 
 <template>
   <div class="dashboard">
-    <header class="app-header"><div class="header-left"><h1>节点详情</h1><nav class="nav-links"><router-link to="/tech-tree">←</router-link></nav></div><div class="header-right"><ThemeToggle /></div></header>
+    <header class="app-header"><div class="header-left"><h1>ノード詳細</h1><nav class="nav-links"><router-link to="/tech-tree">← 戻る</router-link></nav></div><div class="header-right"><ThemeToggle /></div></header>
     <div class="page-container">
       <div v-if="node">
-        <h1 style="font-size:24px;margin-bottom:6px;">{{ node.title }}</h1>
-        <p style="color:var(--text-muted);font-size:13px;margin-bottom:4px;">难度: {{ '▮'.repeat(node.level) }} · {{ node.resourceCount }} 资源 · {{ node.questionCount }} 面试题</p>
-        <p style="color:var(--text-secondary);margin-bottom:28px;">{{ node.description }}</p>
+        <h1 style="font-size:28px;font-weight:300;margin-bottom:8px;letter-spacing:0.04em;">{{ node.title }}</h1>
+        <p style="color:var(--text-muted);font-size:13px;font-weight:300;margin-bottom:8px;">{{ '▮'.repeat(node.level) }} · {{ node.resourceCount }} リソース · {{ node.questionCount }} 面接問題</p>
+        <p style="color:var(--text-secondary);font-weight:300;margin-bottom:40px;line-height:1.8;">{{ node.description }}</p>
 
         <div class="tabs">
-          <button :class="{ active: activeTab === 'resources' }" @click="activeTab = 'resources'">资源</button>
-          <button :class="{ active: activeTab === 'questions' }" @click="activeTab = 'questions'">面试题</button>
-          <button :class="{ active: activeTab === 'assessments' }" @click="activeTab = 'assessments'">评测</button>
+          <button :class="{ active: activeTab === 'resources' }" @click="activeTab = 'resources'">リソース</button>
+          <button :class="{ active: activeTab === 'questions' }" @click="activeTab = 'questions'">面接問題</button>
+          <button :class="{ active: activeTab === 'assessments' }" @click="activeTab = 'assessments'">評価</button>
         </div>
 
         <div v-if="activeTab === 'resources'">
-          <div v-for="r in resources" :key="r.id" class="card" style="padding:16px 20px;">
+          <div v-for="r in resources" :key="r.id" class="card" style="padding:18px 24px;display:flex;align-items:center;gap:16px;">
             <span class="type-badge">{{ r.type }}</span>
-            <a :href="r.url" target="_blank">{{ r.title }}</a>
-            <span style="font-size:12px;color:var(--text-muted);">难度: {{ '▮'.repeat(r.difficulty) }}</span>
+            <a :href="r.url" target="_blank" style="flex:1;font-size:15px;font-weight:300;">{{ r.title }}</a>
+            <span style="font-size:12px;color:var(--text-muted);font-weight:300;">{{ '▮'.repeat(r.difficulty) }}</span>
           </div>
-          <p v-if="!resources.length" class="empty">暂无学习资源</p>
+          <p v-if="!resources.length" class="empty">リソースがありません</p>
         </div>
 
         <div v-if="activeTab === 'questions'">
-          <div v-for="q in questions" :key="q.id" class="card" style="padding:16px 20px;">
-            <div style="font-weight:500;color:var(--text-primary);margin-bottom:6px;">{{ q.question }}</div>
-            <div style="font-size:13px;color:var(--text-muted);">▸ {{ q.answerTip }}</div>
+          <div v-for="q in questions" :key="q.id" class="card" style="padding:20px 24px;">
+            <div style="font-size:15px;font-weight:400;color:var(--text-primary);margin-bottom:8px;">{{ q.question }}</div>
+            <div style="font-size:13px;font-weight:300;color:var(--text-muted);padding-left:12px;border-left:2px solid var(--border-default);">▸ {{ q.answerTip }}</div>
           </div>
-          <p v-if="!questions.length" class="empty">暂无面试题</p>
+          <p v-if="!questions.length" class="empty">面接問題がありません</p>
         </div>
 
         <div v-if="activeTab === 'assessments'">
-          <div v-for="a in assessments" :key="a.id" class="card" style="padding:16px 20px;">
-            <h3 style="font-size:15px;font-weight:400;">{{ a.title }}</h3>
-            <p style="font-size:12px;color:var(--text-muted);">{{ a.type }} · {{ a.timeLimit }}分钟 · 及格: {{ a.passScore }}分</p>
+          <div v-for="a in assessments" :key="a.id" class="card" style="padding:20px 24px;">
+            <h3 style="font-size:16px;font-weight:400;">{{ a.title }}</h3>
+            <p style="font-size:12px;font-weight:300;color:var(--text-muted);margin-top:4px;">{{ a.type }} · {{ a.timeLimit }}分 · 合格: {{ a.passScore }}点</p>
           </div>
-          <p v-if="!assessments.length" class="empty">暂无评测</p>
+          <p v-if="!assessments.length" class="empty">評価がありません</p>
         </div>
       </div>
     </div>
@@ -62,5 +62,5 @@ onMounted(async () => {
 </template>
 
 <style scoped>
-.type-badge { display: inline-block; padding: 2px 8px; background: var(--color-primary-glow); color: var(--color-primary); border-radius: var(--radius-sm); font-family: var(--font-display); font-size: 10px; letter-spacing: 0.05em; text-transform: uppercase; margin-right: 12px; }
+.type-badge { display: inline-block; padding: 2px 10px; background: var(--bg-muted); color: var(--text-secondary); border-radius: var(--radius-sm); font-family: var(--font-body); font-size: 10px; font-weight: 400; letter-spacing: 0.06em; }
 </style>

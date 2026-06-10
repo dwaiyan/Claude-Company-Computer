@@ -9,10 +9,10 @@ const department = ref(''); const error = ref(''); const loading = ref(false);
 
 async function handleRegister() {
   error.value = '';
-  if (password.value.length < 6) { error.value = '密码至少6位'; return; }
+  if (password.value.length < 6) { error.value = 'パスワードは6文字以上必要です'; return; }
   loading.value = true;
   try { await auth.register({ username: username.value, email: email.value, password: password.value, department: department.value || undefined }); router.push('/'); }
-  catch (e: any) { error.value = e.response?.data?.message || '注册失败'; }
+  catch (e: any) { error.value = e.response?.data?.message || '登録失敗'; }
   finally { loading.value = false; }
 }
 </script>
@@ -20,17 +20,17 @@ async function handleRegister() {
 <template>
   <div class="auth-container">
     <div class="auth-card">
-      <h1>Skill_Platform</h1>
-      <h2>创建你的学习账号</h2>
+      <h1>技術能力提升平台</h1>
+      <h2>新規アカウント登録</h2>
       <form @submit.prevent="handleRegister">
-        <div class="form-group"><label for="username">用户名</label><input id="username" v-model="username" type="text" placeholder="你的名字" required /></div>
-        <div class="form-group"><label for="email">邮箱</label><input id="email" v-model="email" type="email" placeholder="your@company.com" required /></div>
-        <div class="form-group"><label for="password">密码</label><input id="password" v-model="password" type="password" placeholder="至少6位" required /></div>
-        <div class="form-group"><label for="department">部门 (选填)</label><input id="department" v-model="department" type="text" placeholder="如：后端开发部" /></div>
+        <div class="form-group"><label for="username">ユーザー名</label><input id="username" v-model="username" type="text" placeholder="名前" required /></div>
+        <div class="form-group"><label for="email">メールアドレス</label><input id="email" v-model="email" type="email" placeholder="your@company.com" required /></div>
+        <div class="form-group"><label for="password">パスワード</label><input id="password" v-model="password" type="password" placeholder="6文字以上" required /></div>
+        <div class="form-group"><label for="department">部署 (任意)</label><input id="department" v-model="department" type="text" placeholder="例：バックエンド開発部" /></div>
         <p v-if="error" class="error-message">{{ error }}</p>
-        <button type="submit" :disabled="loading" class="btn-primary">{{ loading ? '注册中...' : '创建账号' }}</button>
+        <button type="submit" :disabled="loading" class="btn-primary">{{ loading ? '登録中...' : 'アカウント登録' }}</button>
       </form>
-      <p class="auth-link">已有账号？<router-link to="/login">去登录</router-link></p>
+      <p class="auth-link">すでにアカウントをお持ちの方 <router-link to="/login">ログイン</router-link></p>
     </div>
   </div>
 </template>

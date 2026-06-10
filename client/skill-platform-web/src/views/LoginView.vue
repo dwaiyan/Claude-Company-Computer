@@ -11,7 +11,7 @@ const error = ref(''); const loading = ref(false);
 async function handleLogin() {
   error.value = ''; loading.value = true;
   try { await auth.login({ email: email.value, password: password.value }); router.push('/'); }
-  catch (e: any) { error.value = e.response?.data?.message || '登录失败'; }
+  catch (e: any) { error.value = e.response?.data?.message || 'ログイン失敗'; }
   finally { loading.value = false; }
 }
 </script>
@@ -19,23 +19,23 @@ async function handleLogin() {
 <template>
   <div class="auth-container">
     <div class="auth-card">
-      <h1>Skill_Platform</h1>
-      <h2>欢迎回来，请登录你的账号</h2>
+      <h1>技術能力提升平台</h1>
+      <h2>アカウントにログイン</h2>
       <form @submit.prevent="handleLogin">
         <div class="form-group">
-          <label for="email">邮箱</label>
+          <label for="email">メールアドレス</label>
           <input id="email" v-model="email" type="email" placeholder="your@company.com" required autocomplete="email" />
         </div>
         <div class="form-group">
-          <label for="password">密码</label>
+          <label for="password">パスワード</label>
           <input id="password" v-model="password" type="password" placeholder="••••••••" required autocomplete="current-password" />
         </div>
         <p v-if="error" class="error-message">{{ error }}</p>
         <button type="submit" :disabled="loading" class="btn-primary">
-          {{ loading ? '登录中...' : '登录' }}
+          {{ loading ? '検証中...' : 'ログイン' }}
         </button>
       </form>
-      <p class="auth-link">还没有账号？<router-link to="/register">创建账号</router-link></p>
+      <p class="auth-link">アカウントをお持ちでない方 <router-link to="/register">新規登録</router-link></p>
     </div>
   </div>
 </template>
