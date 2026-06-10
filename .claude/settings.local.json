@@ -24,7 +24,8 @@
       "Bash(npm install *)",
       "mcp__plugin_playwright_playwright__browser_evaluate",
       "Bash(npx vue-tsc *)",
-      "Bash(npx vite *)"
+      "Bash(npx vite *)",
+      "Bash(git commit -m 'feat: Japanese Zen Editorial redesign + mock data layer *)"
     ]
   }
 }
