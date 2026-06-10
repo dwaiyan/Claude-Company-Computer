@@ -11,12 +11,12 @@ function goToNode(nodeId: string) { router.push(`/tech-tree/${nodeId}`); }
 <template>
   <div class="dashboard">
     <header class="app-header">
-      <div class="header-left"><h1>技術図譜</h1><nav class="nav-links"><router-link to="/">← 戻る</router-link></nav></div>
+      <div class="header-left"><h1>技术图谱</h1><nav class="nav-links"><router-link to="/">← 返回</router-link></nav></div>
       <div class="header-right"><ThemeToggle /></div>
     </header>
     <div class="page-container">
-      <div class="page-header"><p>.NET エコシステム技術スタック全景</p></div>
-      <div v-if="loading" class="loading">読込中...</div>
+      <div class="page-header"><p>.NET 生态技术栈全景</p></div>
+      <div v-if="loading" class="loading">加载中...</div>
       <div v-else class="tree-grid">
         <div v-for="tree in trees" :key="tree.id" class="tree-card" @click="goToNode(tree.id)">
           <div class="tree-icon">{{ tree.icon || '▣' }}</div>

@@ -19,27 +19,27 @@ async function doCheckIn() {
 
 <template>
   <div class="dashboard">
-    <header class="app-header"><div class="header-left"><h1>学習記録</h1><nav class="nav-links"><router-link to="/">← 戻る</router-link></nav></div><div class="header-right"><ThemeToggle /></div></header>
+    <header class="app-header"><div class="header-left"><h1>学习追踪</h1><nav class="nav-links"><router-link to="/">← 返回</router-link></nav></div><div class="header-right"><ThemeToggle /></div></header>
     <div class="page-container">
-      <div v-if="loading" class="loading">読込中...</div>
+      <div v-if="loading" class="loading">加载中...</div>
       <template v-else-if="profile">
         <div class="stats-row stagger-1">
-          <div class="stat-card"><div class="stat-num">{{ profile.streakDays }}</div><div class="stat-label">連続日数</div></div>
-          <div class="stat-card"><div class="stat-num">{{ profile.weeklyMinutes }}</div><div class="stat-label">今週の分</div></div>
-          <div class="stat-card"><div class="stat-num">{{ profile.totalCheckIns }}</div><div class="stat-label">総チェックイン</div></div>
+          <div class="stat-card"><div class="stat-num">{{ profile.streakDays }}</div><div class="stat-label">连续打卡</div></div>
+          <div class="stat-card"><div class="stat-num">{{ profile.weeklyMinutes }}</div><div class="stat-label">本周分钟</div></div>
+          <div class="stat-card"><div class="stat-num">{{ profile.totalCheckIns }}</div><div class="stat-label">总打卡</div></div>
         </div>
 
         <div class="card stagger-2">
-          <h2>今日のチェックイン</h2>
+          <h2>今日打卡</h2>
           <div style="display:flex;gap:12px;">
-            <input v-model.number="minutes" type="number" min="1" placeholder="学習時間(分)" class="form-input" style="flex:1;" />
-            <input v-model="note" type="text" placeholder="学習ノート (任意)" class="form-input" style="flex:2;" />
-            <button @click="doCheckIn" class="btn-primary" style="width:auto;padding:10px 28px;">記録</button>
+            <input v-model.number="minutes" type="number" min="1" placeholder="学习时长 (分钟)" class="form-input" style="flex:1;" />
+            <input v-model="note" type="text" placeholder="学习笔记 (可选)" class="form-input" style="flex:2;" />
+            <button @click="doCheckIn" class="btn-primary" style="width:auto;padding:10px 28px;">打卡</button>
           </div>
         </div>
 
         <div class="card stagger-3">
-          <h2>スキルレーダー</h2>
+          <h2>技能雷达</h2>
           <div v-if="profile.skillRadar.length" class="skill-list">
             <div v-for="s in profile.skillRadar" :key="s.nodeId" class="skill-row">
               <span class="skill-name">{{ s.nodeTitle || s.nodeId.slice(0,8) }}</span>
@@ -47,7 +47,7 @@ async function doCheckIn() {
               <span class="skill-score">{{ s.selfScore }}/5</span>
             </div>
           </div>
-          <p v-else class="empty"><a href="#" @click.prevent="router.push('/tech-tree')">技術図譜</a> から学習を始めましょう</p>
+          <p v-else class="empty">去 <a href="#" @click.prevent="router.push('/tech-tree')">技术图谱</a> 开始学习</p>
         </div>
       </template>
     </div>
